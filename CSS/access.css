@@ -1,0 +1,201 @@
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 16.5px;
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.access_detail p,
+.contact_section_intr p {
+  text-align: center;
+  margin: 1rem;
+}
+
+
+
+.access_section_hdr h2 {
+  text-align: center;
+  margin: 0.75rem 0.5rem 0 ;
+  font-size: 2rem;
+}
+
+.access_addres {
+  background: #fff;
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+.contact_section {
+  margin: 1rem 0  ;
+}
+
+.access_addres dl {
+  width: 90%; 
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  
+}
+.access_addres dt {
+  width:25%;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1em 0;
+  text-align: right;
+  vertical-align: middle;
+  
+  
+}
+.access_addres dd {
+  width: 75%;
+  margin: 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+  vertical-align: middle;
+  line-height: 1.5rem;
+}
+
+form {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    
+    
+  }
+
+  textarea {
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background: #C43D3D;
+    color: #fff;         
+    font-weight: bold;
+    border: none;
+    cursor: pointer;    
+    transition: 0.3s;    
+    width: 100%; 
+  }
+
+
+  input[type="submit"]:hover {
+    background: #a32e2e;
+  }
+
+  .btn {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  
+
+
+
+
+@media screen and (min-width: 768px){
+  h2 {
+    font-size: 2rem;
+  }
+
+  .access_section_hdr {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 95%;
+  }
+
+  .access_section_hdr h2 { order: 1; }
+  .access_section_hdr img { order: 2; width:  80%;}
+
+
+  .access_section_hdr h2 {
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .access_detail p,
+  .contact_section_intr p {
+    font-size: 1.25rem;
+  }
+
+  .access_detail h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 2rem;
+    margin: 10px auto;
+    width: 85% ;
+    text-align: center;
+  }
+  .access_detail h3::before {
+    flex: 1 1 auto;
+    content: "";
+    display: block;
+    width: calc(100% - 22.5em);
+    height: 2px;
+    background-color: #000;
+  }
+
+  .en .access_detail h3::before {
+    width: calc(100% - 50em);
+  }
+  
+  .access_detail p {
+    width: 75%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    letter-spacing:0.1em
+  }
+  
+  .access_addres {
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  form {
+    max-width: 60%;
+  }
+
+
+}

@@ -1,0 +1,174 @@
+.main {
+  width: 100%;
+}
+
+img {
+  border-radius: 3px;
+}
+
+
+#menu_wrap h2,
+.slide_main p,
+.ec-site p,
+.copyrights p{
+  text-align: center;
+}
+
+
+.slider_main_center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 2rem auto;
+  max-width: 90%;
+}
+
+
+
+.slide_main {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.slide_main img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.item_left, .item_right {
+  width: 48%; 
+  padding: 0;
+}
+
+.slider_main_center ul p {
+  margin-bottom: 0.25rem;
+}
+
+.slider_main_center li {
+  text-align: center;
+}
+
+
+.grid_main {
+  margin: 0 auto 0 auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.grid_main .item {
+  margin-bottom: 10px;
+}
+
+.ec-site{
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.ec-site p {
+    margin-bottom: 10px;
+  }
+
+
+@media screen and (min-width: 768px){
+  .slider_main_center {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .item_left { order: 1; width: 20%; }
+  .slide_main { order: 2; width: 54%; }
+  .item_right { order: 3; width: 20%; }
+
+  .slider_main_center p {
+    visibility: hidden
+  }
+  
+
+  dd,dt {
+    /* font-size: 1.5rem; */
+    font-size: clamp(0.5rem, calc(1rem + 0.5vw), 1.5rem);
+  }
+  
+  dd {
+    display: none;
+  }
+
+  .slide_main {
+    position: relative;
+  }
+
+  .slide_main img {
+    left: 1.6rem;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .item-info {
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    right: calc(-37% - 1rem);
+    /* left: 110%; */
+  }
+.item-info dt {
+  border-bottom: 1px solid #000;
+  
+}
+
+
+
+  .grid_main_don {
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+  }
+
+  .grid_main_don .item {
+    width: calc(94% / 2);
+  }
+  .gird_main_des {
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+  }
+
+  .gird_main_des .item {
+    width: calc(94% / 2);
+  }
+
+  .grid_main_des img {
+    width: 50%;
+    margin: auto;
+  }
+
+
+
+  h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+
+  figcaption {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .ec-site{
+  width: 80%;
+  margin: 1rem auto;
+  }
+
+  .ec-site p {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+  }
+
+  .ec-site br {
+    display: none;
+  }
+}

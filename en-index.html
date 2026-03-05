@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沖縄そば専門店すばやー</title>
+  <!-- my css -->
+  <link rel="stylesheet" href="CSS/common.css">
+  <link rel="stylesheet" href="CSS/top-style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Antique&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="index_en">
+  <div id="wrapper">
+    <header>
+      <div class="nuv">
+        <div class="dummy"></div>
+        <h1>
+          <a href="index.html" >
+            <img src="images/logo.svg" alt="沖縄そば専門店すばやー">
+          </a>
+        </h1>
+        <div class="hum">
+          <img src="images/hum_o.svg" alt="メニュー" class="icon-hum">
+        </div>
+      </div>
+      <div class="nav_open">
+        <div class="hum-close">
+          <img src="images/hum_c.svg" alt="閉じる" class="icon-close">
+        </div>
+        <ul class="ul_left">
+          <li><a href="en-index.html">Home</a></li>
+          <li><a href="en-index.html#section_about_bodyup"> Concept</a></li>
+          <li><a href="en-menu.html#menu_wrap">Menu</a></li>
+        </ul>
+        <ul class="ul_right">
+          <li><a href="en-access.html#access_section">Shop Info</a></li>
+          <li><a href="en-access.html#map">Map</a></li>
+          <li><a href="index.html">Japanese</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <div class="main">
+      <div class="main_contents">
+        <!-- <img src="images/shuri.svg" alt=""> -->
+        <div class="section_hiro">
+          <img src="images/en-hiro.png" class="bottom" alt="ソーキそば" >
+          <img src="images/hiro_text.png" class="top" alt="黄金だしの旨味を味わうこだわりの沖縄そば">
+        </div>
+
+        <h2>Information</h2>
+
+        <div class="section_banner slider-js">
+
+          <div class="slider-wrapper">
+            <a href="en-menu.html" class="slide active">
+              <img src="images/banner01.png" alt="OPEN記念バナー">
+            </a>
+            <!-- <a href="#" class="slide">
+              <img src="images/banner02.png" alt="通販バナー">
+            </a> -->
+          </div>
+
+          <!-- <div class="slider-nav">
+            <button type="button" class="slider-nav-prev">
+              <span class="visually-hidden">◀︎</span>
+            </button>
+            <button type="button" class="slider-nav-next">
+              <span class="visually-hidden">▶︎</span>
+            </button>
+          </div> -->
+          <!-- <p>
+            2026.1.27 : ニュースタイトル（リンクを挿入）
+          </p> -->
+
+        </div>
+      </div>
+
+      <div class="section_about">
+        <div id="section_about_bodyup">
+          <img src="images/kodawari_01.png" alt="こだわり自家製麺">
+          <h3>Our Authentic Noodles</h3>
+          <p>
+            We take pride in our homemade noodles.<br>
+            They have a rich wheat aroma.<br>
+
+            The texture is chewy and smooth.<br>
+            They pair perfectly with our soup.<br>
+            Please enjoy the pride of Subaya.<br>
+          </p>
+        </div>
+        <div id="section_about_bodydown">
+          <img src="images/kodawari_02.png" alt="こだわりスープ">
+          <h3>Our Signature Broth</h3>
+          <p>
+            The broth is the heart of our soba.<br>
+            It is made from pork and bonito flakes.<br>
+            The taste is rich yet very clean.<br>
+            You’ll want to drink every last drop.<br>
+            A taste that keeps you coming back.
+          </p>
+        </div>
+      </div>
+
+      <div class="section_menu">
+        <h2>Menu</h2>
+        <img src="images/en-top_menu.png" alt="人気メニュー">
+        <p>
+          <a href="en-menu.html#menu_wrap" class=button1>Other Menu</a>
+        </p>
+      </div>
+    </div><!-- .main -->
+
+
+    <div class="footer">
+      <a href="index.html" class="footer_logo">
+        <img src="images/logo.svg" alt="沖縄そば専門店すばやー">
+      </a>
+
+      <div class="footer_contents">
+        <div><a href="https://www.instagram.com/shurijo_castle_park/" target="_blank" rel="noopener noreferrer"><img src="images/Instagram-logo.png" alt="インスタグラム"></a></div>
+        <div><a href="https://x.com/shurijo_castle" target="_blank" rel="noopener noreferrer"><img src="images/x-logo.png" alt="エックス"></a></div>
+        <div>
+          <p>Address：1-2Shuri Kinjocho, Naha City, Okinawa-ken Japan</p>
+          <p>Number：098-058-3150</p>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p>&copy;2026 沖縄そば専門店すばやー All Rights Reserved</p>
+      </div>
+      <img src="images/top_btn.png" id=to_top class="hide" alt="TOPに戻る">
+    </div><!-- footer -->
+  </div><!-- .wrapper -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="JS/top-script.js"></script>
+  <script>
+    'use strict';
+
+    $(document).ready(function(){
+      $('.top').addClass('fadein');
+    });
+  </script>
+</body>
+
+</html>

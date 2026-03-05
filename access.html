@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沖縄そば専門店すばやー</title>
+  <!-- my css -->
+   <link rel="stylesheet" href="CSS/common.css">
+   <link rel="stylesheet" href="CSS/access.css">
+  <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="nuv">
+        <div class="dummy"></div>
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.svg" alt="沖縄そば専門店すばやー">
+          </a>
+        </h1>
+        <div class="hum">
+          <img src="images/hum_o.svg" alt="メニュー" class="icon-hum">
+        </div>
+      </div>
+      <div class="nav_open">
+        <div class="nav_header">
+          <div class="hum-close">
+            <img src="images/hum_c.svg" alt="閉じる" class="icon-close">
+          </div>
+        </div>
+        <ul class="ul_left">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="index.html#section_about_bodyup">こだわり</a></li>
+          <li><a href="menu.html#menu_wrap">メニュー</a></li>
+        </ul>
+        <ul class="ul_right">
+          <li><a href="access.html#access_section">店舗案内</a></li>
+          <li><a href="access.html#map">マップ</a></li>
+          <li><a href="en-access.html">English</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="access_section">
+      <h2>店舗案内</h2>
+      <div class="access_inner">
+        <div class="access_section_hdr">
+          <img src="images/shop.png" alt="">
+          <h2>沖縄そば専門店すばやー</h2>
+        </div>
+
+        <div class="access_section_text">
+          <div class="access_detail">
+            <h3>
+              首里城の美しさを再現した空間で最高の一杯を。
+            </h3>
+            <p>
+             朱色の王宮を彷彿とさせる優雅な店内。<br>
+             琉球の誇りを感じる空間で贅沢なひと時。<br>
+             香り豊かな自家製麺と黄金に輝くスープ。<br>
+             歴史を紡ぐ伝統の味を心ゆくまでどうぞ。
+            </p>
+          </div>
+          <div class="access_addres">
+            <dl>
+              <dt>住　所：</dt> <!-- CSS ::after content :　をつける -->
+              <dd>沖縄県那覇市首里金城町1−2</dd>
+            
+              <dt>T E L：</dt> 
+              <dd>098-058-3150</dd>
+            
+              <dt>営業時間：</dt> 
+              <dd>11:00～21:00</dd>
+            
+              <dt>定休日：</dt> 
+              <dd>無休</dd>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+      <h2 id="map">MAP</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.373686657989!2d127.71948330000001!3d26.217044899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bfe6cf4db67%3A0xc0899fbab29e4f8b!2z6aaW6YeM5Z-O5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1769671834521!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact_section">
+      <div class="contact_section_intr">
+        <h2>お問い合わせ</h2>
+        <p>いつもご利用いただき、ありがとうございます。<br>
+          ご質問・ご意見・ご要望などがございましたら<br>
+          お気軽にご連絡くださいませ。
+        </p>
+      </div>
+      <form action="">
+        
+       <label></label><p>お名前：<input type="text" placeholder="沖縄 太郎" name="name" required></p></label>
+       <label></label><p>メールアドレス：<input type="email" placeholder="〇〇@example.com" name="email" required></p></label>
+       <p>お問い合わせ内容：</p>
+       <textarea placeholder="お問い合わせ内容をご記入ください" name=message ></textarea>
+       <div class=btn>
+        <input type="submit" value="送信">
+       </div>  
+      </form>
+    </div>
+    <div class="footer">
+      <a href="index.html" class="footer_logo">
+        <img src="images/logo.svg" alt="沖縄そば専門店すばやー">
+      </a>
+
+      <div class="footer_contents">
+        <div><a href="https://www.instagram.com/shurijo_castle_park/" target="_blank" rel="noopener noreferrer"><img src="images/Instagram-logo.png" alt="インスタグラム"></a></div>
+        <div><a href="https://x.com/shurijo_castle" target="_blank" rel="noopener noreferrer"><img src="images/x-logo.png" alt="エックス"></a></div>
+        <div>
+          <p>住所：沖縄県那覇市首里金城町1-2</p>
+          <p>TEL：098-058-3150</p>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p>&copy;2026 沖縄そば専門店すばやー All Rights Reserved</p>
+      </div>
+      <img src="images/top_btn.png" id=to_top class="hide" alt="TOPに戻る">
+    </div><!-- footer -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="JS/top-script.js"></script>
+</body>
+</html>

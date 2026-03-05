@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/*  
+  Josh W. Comeau's Custom CSS Reset
+  www.joshwcomeau.com
+*/
+body {
+  background: #F7F3EA;
+}
+/* 1. ボックスモデルの修正：余白や境界線が幅を壊さないようにする */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. デフォルトの余白を削除 */
+* {
+  margin: 0;
+}
+
+/* 3. 本文の行間を整え、フォントのレンダリングを滑らかにする */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  ul {
+  list-style: none; /* 点を消す */
+  padding-left: 0;  /* 左の余白を消す */
+}
+}
+
+/* 4. メディア要素（画像など）がはみ出さないようにし、ブロック要素化する */
+img, picture,video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+/* 5. フォーム要素が親のフォント設定を無視するのを防ぐ */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. 長い単語が画面からはみ出して横スクロールが出るのを防ぐ */
+p,dl,figure,h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-family: "Zen Antique", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* 7. ルート（#rootや#__nextなど）にスタック文脈を作成する（Reactなどのフレームワーク用） */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* 8.　画面を中央に表示する */
+#wrapper {  
+  width: 100%;
+  margin: 0 auto;     
+  
+}
+
+header,.main,.footer {
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center;    /* 横方向の中央揃え */
+}
+
+
+/*  header  */
+
+header {
+  display: flex;
+  background: #9f7e5f;
+  padding: 0.5rem;
+  position: relative;
+  height: 120px;
+}
+.index header {
+  height: 77px;
+  background-color: #fff;
+}
+header h1 a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
+  z-index: 500;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header a  {
+  font-family: "Zen Antique", serif;
+  font-style: normal; 
+}
+
+header .nuv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5px;
+} 
+
+/* ハンバーガーについて */
+
+.nav_open {
+  background-image:url(../images/hum_bg.jpg);
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+
+.dummy {
+  visibility: hidden;
+  width: 40px;
+}
+
+.hum {
+  width: 40px;
+  cursor: pointer;
+}
+
+
+
+.hum-close {
+  /* display: none; */
+  margin-left: auto;
+  margin-top: 13px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.hum.show-icons .icon-hum {
+  display: none;
+}
+
+.hum.show-icons .icon-close {
+  display: block;
+}
+
+
+.nav_open ul {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+  margin: 50px 50px 0 50px;        
+                               
+}
+
+.nav_open .ul_right {
+  margin-top: 20px;
+}
+
+.nav_open {
+  position: fixed;
+  top: 0;
+  right: -270px;
+  width: 270px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 500;
+  transition: 0.3s;
+}
+
+.nav_open a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav_open.show {
+  transform: translateX(-270px);
+}
+
+.nav_footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px ;
+  
+}
+
+.nav_footer img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+/*  footer  */
+.footer {
+  background: #9f7e5f;
+  padding: 0.5rem ;
+}
+
+
+.footer a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;  
+}
+
+.footer_contents {
+  display: flex;  
+  align-items: center;
+  padding: 0px 0.5rem;
+  gap:0.5rem;
+  font-size: 14px;
+
+}
+
+.footer_contents a img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.copyrights p{
+  margin: 5px;
+  font-size: 0.75rem;
+}
+
+#to_top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 15px;
+  right: 0px;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.index_ec .main p{
+  margin: auto;
+  font-size: 50px;
+  writing-mode: vertical-rl; 
+  padding: 80px 0 0 0;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+  
+
+  header h1 a img {
+    width: 100px;
+    height: 100px; 
+  }
+
+  .hum, .dummy, .hum-close {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .nav_open {
+    position: static;   /* 固定を解除 */
+    width: auto;
+    height: auto;
+    background: transparent;
+    transform: none !important; /* 強制的に表示 */
+    display: block;
+  }
+
+  .nav_open ul {
+    display: flex;
+    flex-direction: row; /* 縦から横へ */
+    margin: 0;
+    gap: 20px;          /* メニュー間の余白 */
+  }
+
+  .nav_open .ul_right {
+    margin-top: 0px;
+  }
+
+  /* .nav_open ul li:nth-child(n+3) {
+    display: none;
+  } */
+
+  .nav_header, 
+  .nav_footer {
+    display: none;
+  }
+
+  header {
+    position: relative;
+    height: 107px;
+    padding: 0;
+    background-color: #9f7e5f;
+  }
+  .index header {
+    height: 108px;
+  }
+
+  header h1 {
+    position: absolute;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+  }
+
+  .nav_open .ul_right {
+    position: absolute;
+    left: 56%;
+    top: 33%;
+    font-size: 1.75rem;
+  }
+  .nav_open .ul_left {
+    position: absolute;
+    right: 56%;
+    top: 33%;
+    font-size: 1.75rem;
+  }
+  
+  
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
